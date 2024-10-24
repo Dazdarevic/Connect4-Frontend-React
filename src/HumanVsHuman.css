@@ -1,0 +1,41 @@
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: lightgray;
+  }
+  
+  .cell > div {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+  }
+  
+  .cell.red > div {
+    background-color: red;
+  }
+  
+  .cell.yellow > div {
+    background-color: yellow;
+  }
+  

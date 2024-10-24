@@ -1,0 +1,56 @@
+.connect-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .board {
+    background-color: #1e90ff;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    background-color: #f0f0f0; 
+    cursor: pointer; 
+  }
+  
+  .cell.player {
+    background-color: #ff0000;
+  }
+  
+  .cell.ai {
+    background-color: #ffff00;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .cell.winning {
+    background-color: #00ff00; /* Zelena boja za pobedničke ćelije */
+  }
+  
+  .status {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
